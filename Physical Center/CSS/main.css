@@ -1,0 +1,410 @@
+/* CSS Dokument */
+
+
+/* ################################################################################################################################ */
+/* Font */
+/* ################################################################################################################################ */  
+
+
+
+/* ################################################################################################################################ */
+/* Standart Klassen */
+/* ################################################################################################################################ */
+
+body, html { margin:0; padding:0; width:100%; height:100%;}
+
+h2 { text-transform:uppercase; text-align: center; margin:100px auto 0 auto;}
+
+h3 {text-transform: uppercase; text-align: center; margin:100px auto 0 auto;}
+
+a { text-decoration:none;}
+
+/* ################################################################################################################################ */
+/* Zusammengefasste Klassen */
+/* ################################################################################################################################ */
+
+header, footer
+{ background-color: white;}
+
+h2
+{color: #fff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+#Home p
+{color: #fff ;}
+
+#Home #ud_intro .ud_button
+{color: #fff;}
+
+#Kontakt .ud_kontakt ul li a, #Kontakt .ud_kontakt ul li, #Kontakt .ud_kontakt ul, #Kontakt .ud_kontakt, #Kontakt .ud_kontakt h2
+{color: rgb(255, 255, 255);}
+
+#Kontakt footer #ud_meta_nav ul li, #Kontakt footer #ud_meta_nav ul, #Kontakt footer #ud_meta_nav, #Kontakt footer #ud_meta_nav p, #Kontakt footer #ud_copyright
+{color: rgb(0, 0, 0);}
+
+#Uberuns h2, #Uberuns p
+{color: black;}
+
+#Pinnwand h2
+{color: black;}
+
+/* ################################################################################################################################ */
+/* Umfassende Objekte & Klassen */
+/* ################################################################################################################################ */
+
+.ud_page { width:100%; min-height:100%; overflow: hidden;}
+
+/* ################################################################################################################################ */
+/* Header */
+/* ################################################################################################################################ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+nav {
+	width: 100%;
+	z-index: 999;
+	height: 65px;
+	line-height: 65px;
+	position: fixed;
+}
+
+nav .wrapper{
+	background-color: #ffffff;
+	width: 100%;
+	height: 80px;
+	padding: 40px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(47, 77, 160);
+}
+
+.wrapper .logo {
+	margin: 50px 0px 20px 0px;
+	float: left;
+	width: 200px;
+}
+
+.wrapper .logo img {
+	width: 100%;
+	height: auto;
+}
+
+.wrapper .nav-links {
+	display: inline-flex;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links li a {
+	color: rgba(37, 37, 37, 0.527);
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 9px 25px;
+	border-radius: 5px;
+	transition: all 300ms;
+}
+
+/* ### Tranings Menü ### */
+
+.nav-links .tr-menu {
+	width: 150px;
+	top: 85px;
+	line-height: 45px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	margin: 30px 0px 0 0;
+	border-radius: 5px;
+}
+
+
+
+.tr-menu li a {
+	background-color: #fff;
+	width: 100%;
+	display: block;
+	padding: 0 0 0 15px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+
+/* ### Erholungs Menü ### */
+
+.nav-links .er-menu {
+	width: 180px;
+	top: 85px;
+	line-height: 45px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	margin: 30px 0px 0 0;
+	border-radius: 5px;
+}
+
+
+.er-menu li a {
+	background-color: #fff;
+	width: 100%;
+	display: block;
+	padding: 0 0 0 15px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+/* ###### hover ###### */ 
+
+.nav-links li a:hover {
+	color: rgb(5, 87, 211);
+	cursor: pointer;
+}
+
+.nav-links li:hover .tr-menu {
+	top: 65px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 300ms;
+}
+
+
+.nav-links li:hover .er-menu {
+	top: 65px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 300ms;
+}
+
+
+
+/* ######################################################################### */
+/* Home */
+/* ######################################################################### */
+
+#Home { background:url(/Images/Bilder/luis-vidal-FodEsaNZs48-unsplash.jpg); background-position:center center; background-size: cover; background-attachment: fixed; background-repeat: no-repeat; height: 100%;}
+#Home #ud_intro { position: absolute; bottom: 50px; left: 50px;}
+#Home #ud_intro h2 { text-align: left; margin: 0 0 0 0; font-size: 100px; line-height: 110px;}
+#Home #ud_intro p { margin:30px 0px 60px 0px; max-width:300px; font-size: 22px;} 
+#Home #ud_intro .ud_button { border: 2px solid rgb(255, 255, 255); padding: 15px; margin: 0;}
+
+
+
+@media screen and (max-width: 600px) {
+	#Home { background-size: cover; background-position: left;}
+	#Home #ud_intro { left: 10%; width: 90%;}
+	#Home #ud_intro h2 { text-align: left; margin: 0; font-size: 25px; line-height: 28px;}
+	#Home #ud_intro p { max-width: 300px; width: 100%; text-align: justify;}
+}
+
+
+/* ######################################################################### */
+/* Pinnwand */
+/* ######################################################################### */
+
+#Pinnwand {
+	padding: 50px;
+}
+
+#Pinnwand h2 {
+	font-size: 40px;
+}
+
+#Pinnwand #ud_bild {
+	float: left;
+	padding:50px 0px 0px 0px;
+}
+
+/* -- Studio Schließung -- */
+
+#Pinnwand #close {
+	position:relative;
+	float: left;
+	width: 42%;
+}
+
+#Pinnwand #close h3 {
+	text-align: center;
+	float: center;
+	font-size: 19px;
+	padding: 40px;
+}
+
+#Pinnwand #close p {
+	text-align: left;
+	float: left;
+	font-size: 17px;
+}
+
+
+
+/* -- Hygiene Konzept -- */
+
+#Pinnwand #Hygiene {
+	position: relative;
+	float: right;
+	width: 42%;
+}
+
+#Pinnwand #Hygiene h3 {
+	text-align: center;
+	float: center;
+	font-size: 19px;
+	padding: 40px;
+}
+
+#Pinnwand #Hygiene p {
+	text-align: left;
+	float: right;
+	font-size: 17px;
+}
+
+
+
+/* ########################################################################## */
+/* Über uns */
+/* ########################################################################## */
+
+#UberUns h2 { color: black; font-size: 40px;}
+#UberUns p { text-align: left; float: left;}
+
+#UberUns .ud_UberUns { width: 42.5%; float: left; margin: 42px 2.5% 0 5%;}
+#UberUns .ud_UberUns:last-child { width: 42.5%; float: left; margin: 50px 5% 0 2.5%;}
+#UberUns .ud_UberUns article { width: 100%; text-align: left; margin: 20px 0px 0px 0px; position: relative;} 
+
+#UberUns .ud_motto_bg { background:url(../Images/Bilder/trx.jpg); background-position: center center; background-size: cover; background-attachment: fixed;}
+#UberUns .ud_motto_bg article .ud_motto { display: inline-block; margin: 150px 0px 0px 90px; width: 92%; font-size: 70px; text-transform: uppercase; color: #fff; text-align: center;}
+
+#UberUns .ud_UberUns ul { text-align: left; display: inline; margin: 0px 0px 0px 0px; float: left;}
+#UberUns .ud_UberUns ul li { list-style: initial; margin: 7px; font-size: 17px;}
+
+@media screen and (max-width: 1100px) {
+	#UberUns .ud_UberUns article p { text-align: justify;}
+	#UberUns .ud_UberUns { width: 80%; float: left; margin: 0px 10% 0 10%;}
+	#UberUns .ud_UberUns:last-child { width: 80%; float: left; margin: 0px 10% 0 10%;}
+	#UberUns .ud_UberUns article { margin: 20px 0 0 0;}
+	#UberUns .ud_motto_bg article .ud_motto { font-size: 27px; line-height: 20px; width: 70%; margin: 20px 0 20px 0;}
+}
+
+@media screen and (min-width: 1600px) {
+	#UberUns .ud_motto_bg article .ud_motto { font-size: 110px; line-height: 90px; width: 70%;}
+	#UberUns .ud_UberUns article p { width: 70%; font-size: 18px; line-height: 25px; margin: 0 auto 35px auto;}
+}
+
+@media screen and (min-width: 2000px) {
+	#UberUns .ud_motto_bg article .ud_motto { font-size: 110px; line-height: 90px; width: 70%;}
+	#UberUns .ud_UberUns article p { width: 70%; font-size: 20px; line-height: 30px; margin: 0 auto 35px auto;}
+}
+
+@media screen and (min-width: 2300px) {
+	#UberUns .ud_motto_bg article .ud_motto { font-size: 110px; line-height: 90px; width: 70%;}
+	#UberUns .ud_UberUns article p { width: 70%; font-size: 22px; line-height: 35px; margin: 0 auto 35px auto;}
+}
+
+
+
+/* ################################################################################################################################ */
+/* Kontakt */
+/* ################################################################################################################################ */
+
+
+#Kontakt {
+	position: relative;
+	background:url(../Images/Bilder/victor-freitas-WvDYdXDzkhs-unsplash.jpg); 
+	background-position: center;
+	background-size:1950px;
+	background-attachment: fixed;
+}
+
+#Kontakt h2 {
+	margin: 100px;
+	padding: 5px;
+	text-align: center;
+	font-size: 40px;
+}
+
+#Kontakt .ud_kontakt {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+#Kontakt .ud_kontakt ul { 
+	margin: 40px 10px 0px 0px;
+	padding: 0px 0px 300px 0px;
+}
+
+#Kontakt .ud_kontakt ul li { 
+	margin:10px 0px 50px 0px; 
+	padding: 0px 0px 0px 0px; 
+	list-style: none; 
+	font-size: 27px;
+}
+
+#Kontakt .ud_kontakt ul li a {
+	text-decoration: underline;
+}
+
+/* ################################################################################################################################ */
+/* footer */
+/* ################################################################################################################################ */
+
+#Kontakt footer { 
+	position: absolute; 
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 190px; 
+	text-align: center; 
+	padding: 40px 0px 0px 0px; 
+	font-size: 14px;
+}
+
+#Kontakt footer .ud_logo {
+	 width: 100%;
+	}
+
+#Kontakt footer .ud_logo img { 
+	width: 190px;
+	height: auto;
+	margin: 0px 0px 10px 20px;
+	}
+
+#Kontakt footer #ud_copyright {
+	margin: 45px 0 0 0;
+	padding: 0;
+	text-decoration: none;
+	}
+
+#Kontakt footer #ud_meta_nav { 
+	position: absolute;
+	margin:-10px 0 0 0;
+}
+
+#Kontakt footer #ud_meta_nav ul {
+	margin: 0;
+	padding: 0;
+	}
+
+#Kontakt footer #ud_meta_nav ul li {
+	margin: 10px 0 0 0 0;
+	padding:0 10px 0 10px;
+	list-style: none;
+	display: inline;
+	border-right: 1px solid #999;
+}
+
+#Kontakt footer #ud_meta_nav ul li:last-child { border: none;} 
+
+@media screen and (max-width: 800px) {
+	#Kontakt .ud_kontakt ul { margin: 85px 0 0 0;}
+	#Kontakt footer { height: 165px; padding: 50px 0 0 0;}
+	#Kontakt footer #ud_meta_nav { margin: 0;}
+}

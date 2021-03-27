@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Icon-Set-Kontakt';
+  src:  url('../fonts/Icon-Set-Kontakt.eot?e644pw');
+  src:  
+    url('../fonts/Icon-Set-Kontakt.eot?e644pw#iefix') format('embedded-opentype'),
+    url('../fonts/Icon-Set-Kontakt.ttf?e644pw') format('truetype'),
+    url('../fonts/Icon-Set-Kontakt.woff?e644pw') format('woff'),
+    url('../fonts/Icon-Set-Kontakt.svg?e644pw#Icon-Set-Kontakt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ud_menu_icon"], [class*=" ud_menu_icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icon-Set-Kontakt' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ud_kontakt_iconmenu:before {
+  content: "\e9bd";
+}
